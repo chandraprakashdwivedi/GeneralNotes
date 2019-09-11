@@ -12,3 +12,13 @@ secrets directly, however it is possible to encrypt secrets using Amazon Key Man
 In ECS, there is no direct alternative for Kubernetes Config Maps as far as we know. It does not have a way to pass configuration to a 
 container other than with environment variables, and the only way to specify the same values for several containers is to copy and 
 paste them.
+
+ it is hard to compare features of ECS and Kubernetes directly, because ECS relies on other Amazon services such as IAM, ELB, EC2 and it 
+ is practically impossible to use ECS independently.At the same time, Kubernetes provide a complete managed execution environment and in 
+ most cases you have a choice, which open-source components to use for a specific implementation. For example, with Kubernetes you have a 
+ choice for a network model (for example, OpenVSwitch, Flannel, or Calico), for a persistent storage (for example, Ceph, GlusterFS, or NFS) 
+ and so on.
+ 
+ECS come with a drawback – once started with ECS you have to use Amazon services for everything.On the other hand, Kubernetes is more than 
+a container management solution. It provides a complete, managed-execution environment for deploying, running, managing and orchestrating
+containers.
