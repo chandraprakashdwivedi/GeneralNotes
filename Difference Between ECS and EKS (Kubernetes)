@@ -1,5 +1,14 @@
- Kubernetes is more than a container management solution. It provides a complete managed execution environment for deploying, running, managing and orchestrating containers. Several features, such as auto scaling and auto healing using cluster- or application-specific probes, are unique for Kubernetes and bring it close to the solutions such as AWS Lambda.
+ Kubernetes is more than a container management solution. It provides a complete managed execution environment for deploying, running, 
+ managing and orchestrating containers. Several features, such as auto scaling and auto healing using cluster- or application-specific
+ probes, are unique for Kubernetes and bring it close to the solutions such as AWS Lambda.
 
-Some container management features of Kubernetes does not have ECS-specific limitations. For example, ECS does not allow multiple containers exposing the same port on the same node. Also there is an opinion (potentially subjective) that Kubernetes CLI is more comfortable than ECS CLI.
+Some container management features of Kubernetes does not have ECS-specific limitations.For example, ECS does not allow multiple containers
+exposing the same port on the same node.
+Also there is an opinion (potentially subjective) that Kubernetes CLI is more comfortable than ECS CLI.
 
-In addition to the auto scaling and auto healing features we mentioned above, Kubernetes has unique features such as Kubernetes Secrets and Config Maps to store credentials and configuration files correspondingly and share them among containers. ECS does not support secrets directly, however it is possible to encrypt secrets using Amazon Key Management Service (KMS) and decrypt them in containers. In ECS, there is no direct alternative for Kubernetes Config Maps as far as we know. It does not have a way to pass configuration to a container other than with environment variables, and the only way to specify the same values for several containers is to copy and paste them.
+In addition to the auto scaling and auto healing features we mentioned above, Kubernetes has unique features such as Kubernetes Secrets 
+and Config Maps to store credentials and configuration files correspondingly and share them among containers. ECS does not support
+secrets directly, however it is possible to encrypt secrets using Amazon Key Management Service (KMS) and decrypt them in containers. 
+In ECS, there is no direct alternative for Kubernetes Config Maps as far as we know. It does not have a way to pass configuration to a 
+container other than with environment variables, and the only way to specify the same values for several containers is to copy and 
+paste them.
