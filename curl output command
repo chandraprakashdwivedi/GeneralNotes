@@ -1,0 +1,4 @@
+curl -k -s -w "\n\nResponse Code: %{http_code}\nTime Taken For Name Look-up: %{time_namelookup} \nTime Taken Establishing TCP Connection : %{time_connect} \nTime Taken For Appconnect: %{time_appconnect} \nTime Taken For Pre-Transfer: %{time_pretransfer} \nTime Taken For First Byte Transfer : %{time_starttransfer} \nTime Taken For Redirect: %{time_redirect} \nTotal Time: %{time_total} \nEffective URL: %{url_effective}\n+++++++++END++++++++++ \n" -o /dev/null https://google.com
+
+
+one condition is there that the url shold not be authenticated
