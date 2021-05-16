@@ -1,0 +1,12 @@
+
+sudo tcpdump -i any -w /var/tmp/trace-%Y-%M-%d_%H.%M.%S.pcap -W 100 -C 10 -nn not tcp port 22
+
+The capture files are called according with the time they are created like trace-2020-11-04_16.11.37.pcap0, trace-2020-11-04_22.35.32.pcap0
+2020 => Year (%Y)
+11 => Month (%M)
+04 => Day (%d)
+16 => Hour (%H)
+11 => Minute (%M)
+37 => Second (%S)
+
+[ '-C 100' and '-W 10' ] 10 files of 100M each will be created under this directory
